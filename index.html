@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuong Nguyen's</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+            font-size: 10px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        .title-showcase {
+            font-size: 4rem;
+            font-weight: 600;
+            margin: 50px 0;
+        }
+
+        .project-item {
+            margin: 20px 0;
+        }
+
+        .project-item::before {
+            content: "> ";
+        }
+
+        .project-item a,
+        .project-item::before {
+            font-size: 3rem;
+            font-weight: 200;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="title-showcase">Cuong Nguyen Projects</h1>
+    <ul class="project-list">
+        <li class="project-item"><a href="apple_hompage/index.html">Apple Hompage Clone</a></li>
+        <li class="project-item"><a href="apple_mobile_experiment/index.html">Apple Mobile with Humburger Menu</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 2000px;
+    padding-top: 50px;
+}
+
+.container {
+    width: 1200px;
+}
+
+/* ------------------- HEADER FIXED -------------------- */
+
+.main-nav {
+    width: 100%;
+    background-color: #1d1d1f;
+    font-size: 1rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    opacity: 0.95;
+    z-index: 2;
+}
+
+.main-nav .container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-nav .main-nav-item {
+    opacity: 0.8;
+}
+
+.main-nav .main-nav-item:hover {
+    opacity: 1;
+}
+
+
+.apple-icon {
+    display: inline-block;
+    background-image: url('images/nav-icons/apple.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 50px;
+}
+
+.search-icon {
+    display: inline-block;
+    background-image: url('images/nav-icons/search.svg');
+    background-size: cover;
+    background-position: botom center;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 50px;
+}
+
+.bag-icon {
+    display: inline-block;
+    background-image: url('images/nav-icons/bag.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 50px;
+}
+
+/* OTHER ICONS */
+
+.us-flag-icon {
+    display: inline-block;
+    background-image: url('https://img.icons8.com/color/48/000000/usa.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 12px;
+    margin: auto;
+}
+
+.arrow-icon {
+    border: solid;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/* ------------------- MAIN FIXED -------------------- */
+
+
+main .optional-notification .covid-notification,
+main .optional-notification .shop-online-notification {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+main .optional-notification .covid-notification {
+    background-color: #0071E3;
+    color: #fff;
+}
+
+main .optional-notification .shop-online-notification {
+    background-color: #fbfbfd;
+}
+
+.main-homepage-flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-homepage-collection .container {
+    padding: 40px 20px 20px;
+    text-align: center;
+    height: 654px;
+}
+
+.main-homepage-collection .mh-iphone-se {
+    background-color: #131313;
+}
+
+.main-homepage-collection .mh-iphone-se .container {
+    
+}
+
+.main-homepage-collection .mh-iphone-11 {
+    background: url('images/iphone-11-large.jpg');
+    background-color: #fbfbfd;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 2000px;
+}
+
+.main-homepage-collection .mh-ipad-pro {
+    background: url('images/ipad-pro-large.jpg');
+    background-color: #fbfbfd;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100wh;
+}
+
+.main-homepage-collection .mg-wwdc20 {
+    background: #000 url('images/wwdc-20-tile.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.main-homepage-collection .mg-watch-serie-5 {
+    background: #fbfbfb url('images/watch-series-5-tile.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.main-homepage-collection .mg-work-your-way {
+    background: #fbfbfd url('images/work-your-way-tile.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.main-homepage-collection .mg-tv-plus {
+    background: #000 url('images/tv-plus-tile.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.main-homepage-collection .mg-creative-at-home {
+    background: #000 url('images/get-creative-at-home-tile.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.main-homepage-collection .mg-opening-stores {
+    background: #fbfbfb url('images/apple-logo-tile.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.main-homepage-collection .main-homepage-grid {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 0 5px;
+}
+
+.main-homepage-collection .main-homepage-grid .grid-item {
+    height: 545px;
+}
+
+.main-homepage-collection .container h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.main-homepage-collection .container h2 {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.main-homepage-collection .container h3 {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.main-homepage-collection .container a {
+    color: #2997FF;
+}
+
+.main-homepage-collection .container a:hover {
+    text-decoration: underline;
+}
+
+.main-homepage-collection .container .learn-more-and-buy {
+    margin-top: 20px;
+}
+
+.main-homepage-collection .container .learn-more-and-buy a:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.main-homepage-collection .mh-iphone-se .container h1,
+.main-homepage-collection .mh-iphone-se .container h2 {
+    color: #fff;
+}
+
+.main-homepage-collection .mh-iphone-se .container h3 {
+    color: #86868B
+}
+
+.main-homepage-collection .main-homepage-grid .mg-wwdc20 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-homepage-collection .main-homepage-grid .content {
+    width: 600px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-homepage-collection .main-homepage-grid .mg-wwdc20 .content h3 {
+    margin: 0 50px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.main-homepage-collection .main-homepage-grid .mg-wwdc20 .content .mg-wwdc20-logo {
+    width: 325px;
+    height: 100px;
+    margin-bottom: 10px;
+    background: #fff url('images/logo-wwdc20-large.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+}
+
+@media (min-width: 621px) {
+    .main-homepage-collection .mh-iphone-se {
+        background-image:  url('images/iphone-se-large.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 80%;
+    }
+}
+
+@media (max-width: 620px) {
+    .main-homepage-collection .mh-iphone-se {
+        background-image:  url('images/iphone-se-small.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: 80%;
+    }
+}
+
+@media (max-width: 964px) {
+    .main-homepage-collection .main-homepage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav-text {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .main-nav .container :nth-child(1) {
+        order: 9;
+    }
+
+    .main-nav .container :nth-child(9) {
+        order: 1;
+    }
+
+    .main-nav .container :nth-child(10) {
+        order: 10;
+    }
+
+    .main-homepage-collection .mh-ipad-pro {
+        background-size: 400%;    
+    }
+
+    .main-homepage-collection .mh-iphone-11 {
+        background-size: 150vh;    
+    }
+
+
+}
+
+/* @media (max-width: 464px) */
+
+
+/* ------------------- FOOTER FIXED -------------------- */
+
+footer {
+    background-color: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+}
+
+footer .container .f-explain a:hover,
+footer .container .f-link-container a:hover,
+footer .container .f-extras .fe-legal-country .fe-legal-link a:hover {
+    color: #1d1d1f;
+}
+
+footer .container .f-explain,
+footer .container .f-extras {
+    color: #86868B;
+}
+
+footer .container .f-explain a,
+footer .container .f-link-container a,
+footer .container .f-extras .fe-legal-country .fe-legal-link a {
+    color: #515154;
+}
+
+footer .container .f-explain p:not(:first-child) {
+    padding: 20px 0;
+}
+
+footer .container .f-explain p,
+footer .container .f-extras {
+    font-size: 0.9rem;
+}
+
+footer .f-link-container {
+    margin: 0 0 40px;
+    padding: 20px 0 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .f-link-container .f-column {
+    flex: 1 1 176px;
+    min-width: 200px;
+    padding: 10px;
+}
+
+footer .f-link-container .f-column .f-collection {
+    margin-bottom: 20px;
+}
+
+footer .container .f-link-container .f-column .fc-title {
+    font-size: 0.95rem;
+    font-weight: 400;
+    cursor: default;
+}
+
+footer .container .f-link-container .f-column .fc-link li {
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+footer .container .f-link-container .f-column .f-collection:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+footer .container .f-extras .fe-shop,
+footer .container .f-extras .fe-legal-country {
+    padding: 10px 0;
+}
+
+footer .container .f-extras .fe-legal-country {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .f-extras .fe-legal-country .fe-copyright,
+footer .container .f-extras .fe-legal-country .fe-legal-link,
+footer .container .f-extras .fe-legal-country .fe-country {
+    flex: 1 1 auto;
+}
+
+footer .container .f-extras .fe-copyright {
+    margin-right: 10px;
+}
+
+footer .container .f-extras .fe-shop a {
+    color: #0066cc;
+}
+
+footer .container .f-extras .fe-legal-country .fe-legal-link li {
+    display: inline;
+}
+
+footer .container .f-extras .fe-legal-country .fe-legal-link li:not(:last-child) {
+    display: inline;
+    padding-right: 15px;
+    margin-right: 10px;
+    border-right: 1px #86868B solid;
+}
+
+footer .container .f-extras .fe-country {
+    text-align: right;
+}
+
+footer .container .f-extras .fe-country .fe-country-text-icon .fe-country-text {
+    margin-left: 10px;
+}
+
